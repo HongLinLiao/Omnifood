@@ -1,0 +1,17 @@
+{
+  "name": "web-static-template",
+  "version": "1.0.0",
+  "description": "web static template with scss",
+  "main": "src/index.html",
+  "scripts": {
+    "style": "gulp style",
+    "watch": "gulp watch"
+  },
+  "author": "Leo Liao",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.4"
+  }
+}
