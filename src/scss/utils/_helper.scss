@@ -1,5 +1,11 @@
-@import "./variables";
+/*#region Margin class  */
 
-.margin-right-sm {
-  margin-right: $margin-sm;
+.mr-1 {
+  @include gen-mr(1.6);
 }
+
+.mt-10 {
+  @include gen-mt(8);
+}
+
+/*#endregion Margin class  */

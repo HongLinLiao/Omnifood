@@ -1,0 +1,47 @@
+/*#region Margin */
+
+@mixin gen-mt($size) {
+  margin-top: #{$size}rem;
+}
+
+@mixin gen-mr($size) {
+  margin-right: #{$size}rem;
+}
+
+@mixin gen-mb($size) {
+  margin-bottom: #{$size}rem;
+}
+
+@mixin gen-ml($size) {
+  margin-left: #{$size}rem;
+}
+
+@mixin gen-m($size) {
+  margin: #{$size}rem;
+}
+
+/*#endregion Margin*/
+
+/*#region Padding */
+
+@mixin gen-pt($size) {
+  padding-top: #{$size}rem;
+}
+
+@mixin gen-pr($size) {
+  padding-right: #{$size}rem;
+}
+
+@mixin gen-pb($size) {
+  padding-bottom: #{$size}rem;
+}
+
+@mixin gen-pl($size) {
+  padding-left: #{$size}rem;
+}
+
+@mixin gen-p($size) {
+  padding: #{$size}rem;
+}
+
+/*#endregion Padding*/
