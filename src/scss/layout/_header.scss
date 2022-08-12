@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-tints;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+
+  .logo {
+    height: 2.2rem;
+  }
+
+  .main-nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-text-dark;
+      font-weight: 500;
+      font-size: 1.8rem;
+      transition: all 0.3s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: $color-shades;
+    }
+
+    .nav-cta:link,
+    .nav-cta:visited {
+      padding: 1.2rem 2.4rem;
+      border-radius: 9px;
+      color: #fff;
+      background-color: $color-primary;
+    }
+
+    .nav-cta:hover,
+    .nav-cta:active {
+      background-color: $color-shades;
+    }
+  }
+}
