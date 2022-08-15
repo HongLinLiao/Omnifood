@@ -13,13 +13,12 @@
       border-radius: 50%;
       margin-right: -1.6rem;
       border: 3px solid $color-tints;
-      //   transition: all 0.3s;
+      transition: all 0.3s;
     }
 
-    // img:hover {
-    //   height: 6rem;
-    //   width: 6rem;
-    // }
+    img:hover {
+      transform: scale(1.3);
+    }
 
     img:last-child {
       margin: 0;
