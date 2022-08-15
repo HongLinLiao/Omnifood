@@ -1,4 +1,5 @@
 @import "a";
+@import "list";
 
 .section-meals {
   padding: 9.6rem 0;
@@ -72,28 +73,6 @@
 
       &-paleo {
         background-color: #ffd43b;
-      }
-    }
-  }
-
-  .diets {
-    .list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 1.6rem;
-
-      &-item {
-        font-size: 1.8rem;
-        display: flex;
-        align-items: center;
-        gap: 1.6rem;
-      }
-
-      &-icon {
-        width: 3rem;
-        height: 3rem;
-        color: $color-primary;
       }
     }
   }

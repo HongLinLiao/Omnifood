@@ -20,6 +20,14 @@
   @include gen-mb(4.8);
 }
 
+.mt-6 {
+  @include gen-mt(4.8);
+}
+
+.mt-4 {
+  @include gen-mt(3.2);
+}
+
 /*#endregion Margin class  */
 
 /*#region Heading */
