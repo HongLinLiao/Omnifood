@@ -14,13 +14,9 @@
     align-items: center;
   }
 
-  &-2-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  &-3-cols {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  &-4-cols {
-    grid-template-columns: repeat(4, 1fr);
+  @for $val from 1 through 12 {
+    &-#{$val}-cols {
+      grid-template-columns: repeat($val, 1fr);
+    }
   }
 }
