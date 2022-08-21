@@ -6,3 +6,10 @@ $color-shades: #cf711f;
 $color-text-dark: #333;
 $color-text-medium: #555;
 $color-text-light: #888;
+
+// RWD Break point
+$size-sd: 84em; // 1344px Smaller Desktop
+$size-lt: 75em; // 1200px landscape Tablets
+$size-t: 59em; // 944px Tablets
+$size-st: 44em; // 704px Smaller Tablets
+$size-ph: 34em; // 544px Phone

@@ -3,6 +3,11 @@
   align-items: center;
   gap: 1.6rem;
 
+  @media screen and (max-width: $size-lt) {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
   &-imgs {
     display: flex;
     align-items: center;

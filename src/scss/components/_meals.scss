@@ -17,6 +17,10 @@
 
     &-content {
       padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+
+      @media screen and (max-width: $size-t) {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+      }
     }
 
     &-img {
@@ -74,6 +78,13 @@
       &-paleo {
         background-color: #ffd43b;
       }
+    }
+  }
+
+  .diets {
+    @media screen and (max-width: $size-st) {
+      grid-column: 1 / -1;
+      justify-self: center;
     }
   }
 

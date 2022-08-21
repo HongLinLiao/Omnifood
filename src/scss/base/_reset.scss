@@ -144,6 +144,18 @@ html {
   // font-size: 10px;
   // 10px / default (16px) = 0.625
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: $size-lt) {
+    // 9px / 16px = 0.5625
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $size-t) {
+    // 8px / 16px = 0.5
+    font-size: 50%;
+  }
 }
 
 body {
@@ -151,6 +163,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: $color-text-medium;
+  overflow-x: hidden;
 }
 
 strong {

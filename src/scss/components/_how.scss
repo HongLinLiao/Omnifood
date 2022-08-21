@@ -7,6 +7,10 @@
       font-weight: 600;
       color: #ddd;
       margin-bottom: 1.2rem;
+
+      @media screen and (max-width: $size-t) {
+        font-size: 7.4rem;
+      }
     }
 
     &-description {
@@ -23,6 +27,10 @@
       align-items: center;
       justify-content: center;
       position: relative;
+
+      @media screen and (max-width: $size-ph) {
+        transform: translateY(2.4rem);
+      }
 
       &::before,
       &::after {
@@ -43,6 +51,18 @@
         width: 50%;
         padding-bottom: 50%;
         background-color: $color-tints-2;
+      }
+
+      &:nth-child(2) {
+        @media screen and (max-width: $size-ph) {
+          grid-row: 1;
+        }
+      }
+
+      &:nth-child(6) {
+        @media screen and (max-width: $size-ph) {
+          grid-row: 5;
+        }
       }
     }
   }

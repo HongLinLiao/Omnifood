@@ -11,6 +11,14 @@
     background-image: linear-gradient(to right bottom, #eb984e, $color-primary);
     overflow: hidden;
 
+    @media screen and (max-width: $size-t) {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    @media screen and (max-width: $size-t) {
+      grid-template-columns: 1fr;
+    }
+
     &-text-box {
       padding: 4.8rem 6.4rem 6.4rem 6.4rem;
       color: #45260a;
@@ -23,6 +31,10 @@
         font-size: 1.8rem;
         line-height: 1.8;
       }
+
+      @media screen and (max-width: $size-t) {
+        padding: 3.2rem;
+      }
     }
 
     &-img-box {
@@ -34,6 +46,11 @@
         url("../img/eating.jpg");
       background-size: cover;
       background-position: center;
+
+      @media screen and (max-width: $size-t) {
+        height: 32rem;
+        grid-row: 1;
+      }
     }
 
     &-form {
@@ -41,6 +58,10 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 3.2rem;
       row-gap: 2.4rem;
+
+      @media screen and (max-width: $size-t) {
+        grid-template-columns: 1fr;
+      }
 
       label {
         display: block;
@@ -73,6 +94,10 @@
         &:hover {
           background-color: #fff;
           color: $color-text-medium;
+        }
+
+        @media screen and (max-width: $size-t) {
+          margin-top: 1.2rem;
         }
       }
     }

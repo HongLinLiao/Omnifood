@@ -4,6 +4,25 @@
 
   .grid-footer {
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+    @media screen and (max-width: $size-st) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  .nav-col {
+    @media screen and (max-width: $size-st) {
+      grid-row: 1;
+      grid-column: span 2;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .logo-col,
+  .address-col {
+    @media screen and (max-width: $size-st) {
+      grid-column: span 3;
+    }
   }
 
   .logo-col {

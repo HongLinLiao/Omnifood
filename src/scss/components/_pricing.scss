@@ -6,6 +6,10 @@
     border-radius: 11px;
     width: 75%;
 
+    @media screen and (max-width: $size-st) {
+      width: 100%;
+    }
+
     &:first-child {
       justify-self: end;
       border: 2px solid $color-tints;
