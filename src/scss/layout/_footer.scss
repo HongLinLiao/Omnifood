@@ -5,13 +5,13 @@
   .grid-footer {
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 
-    @media screen and (max-width: $size-st) {
+    @include sm-tablets {
       grid-template-columns: repeat(6, 1fr);
     }
   }
 
   .nav-col {
-    @media screen and (max-width: $size-st) {
+    @include sm-tablets {
       grid-row: 1;
       grid-column: span 2;
       margin-bottom: 3.2rem;
@@ -20,7 +20,7 @@
 
   .logo-col,
   .address-col {
-    @media screen and (max-width: $size-st) {
+    @include sm-tablets {
       grid-column: span 3;
     }
   }

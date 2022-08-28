@@ -15,7 +15,7 @@
     cursor: pointer;
     font-family: inherit;
 
-    @media screen and (max-width: $size-ph) {
+    @include phone {
       padding: 2.4rem 1.6rem;
     }
   }

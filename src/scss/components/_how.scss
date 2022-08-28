@@ -8,7 +8,7 @@
       color: #ddd;
       margin-bottom: 1.2rem;
 
-      @media screen and (max-width: $size-t) {
+      @include tablets {
         font-size: 7.4rem;
       }
     }
@@ -18,17 +18,13 @@
       line-height: 1.8;
     }
 
-    &-img {
-      width: 35%;
-    }
-
     &-img-box {
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
 
-      @media screen and (max-width: $size-ph) {
+      @include phone {
         transform: translateY(2.4rem);
       }
 
@@ -54,16 +50,20 @@
       }
 
       &:nth-child(2) {
-        @media screen and (max-width: $size-ph) {
+        @include phone {
           grid-row: 1;
         }
       }
 
       &:nth-child(6) {
-        @media screen and (max-width: $size-ph) {
+        @include phone {
           grid-row: 5;
         }
       }
+    }
+
+    &-img {
+      width: 35%;
     }
   }
 }

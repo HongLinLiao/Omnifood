@@ -147,12 +147,12 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 
-  @media screen and (max-width: $size-lt) {
+  @include ls-tablets {
     // 9px / 16px = 0.5625
     font-size: 56.25%;
   }
 
-  @media screen and (max-width: $size-t) {
+  @include tablets {
     // 8px / 16px = 0.5
     font-size: 50%;
   }

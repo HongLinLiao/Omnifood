@@ -1,8 +1,6 @@
 @import "button";
 
 .section-cta {
-  padding: 4.8rem 0 12.8rem 0;
-
   .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -11,11 +9,11 @@
     background-image: linear-gradient(to right bottom, #eb984e, $color-primary);
     overflow: hidden;
 
-    @media screen and (max-width: $size-t) {
+    @include tablets {
       grid-template-columns: 3fr 2fr;
     }
 
-    @media screen and (max-width: $size-t) {
+    @include phone {
       grid-template-columns: 1fr;
     }
 
@@ -32,24 +30,8 @@
         line-height: 1.8;
       }
 
-      @media screen and (max-width: $size-t) {
+      @include phone {
         padding: 3.2rem;
-      }
-    }
-
-    &-img-box {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(235, 151, 78, 0.35),
-          rgba(230, 125, 34, 0.35)
-        ),
-        url("../img/eating.jpg");
-      background-size: cover;
-      background-position: center;
-
-      @media screen and (max-width: $size-t) {
-        height: 32rem;
-        grid-row: 1;
       }
     }
 
@@ -59,7 +41,7 @@
       column-gap: 3.2rem;
       row-gap: 2.4rem;
 
-      @media screen and (max-width: $size-t) {
+      @include tablets {
         grid-template-columns: 1fr;
       }
 
@@ -69,6 +51,7 @@
         font-weight: 500;
         margin-bottom: 1.2rem;
       }
+
       input,
       select {
         width: 100%;
@@ -96,9 +79,25 @@
           color: $color-text-medium;
         }
 
-        @media screen and (max-width: $size-t) {
+        @include tablets {
           margin-top: 1.2rem;
         }
+      }
+    }
+
+    &-img-box {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(235, 151, 78, 0.35),
+          rgba(230, 125, 34, 0.35)
+        ),
+        url("../img/eating.jpg");
+      background-size: cover;
+      background-position: center;
+
+      @include phone {
+        height: 32rem;
+        grid-row: 1;
       }
     }
 

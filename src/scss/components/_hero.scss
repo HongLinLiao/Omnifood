@@ -8,7 +8,7 @@
   background-color: $color-tints;
   padding: 4.8rem 0 9.6rem 0;
 
-  @media screen and (max-width: $size-ph) {
+  @include phone {
     padding: 2.4rem 0 4.8rem 0;
   }
 
@@ -21,21 +21,21 @@
     margin: 0 auto;
     align-items: center;
 
-    @media screen and (max-width: $size-sd) {
+    @include sm-desktop {
       max-width: 120rem;
     }
 
-    @media screen and (max-width: $size-lt) {
+    @include ls-tablets {
       gap: 4.8rem;
     }
 
-    @media screen and (max-width: $size-t) {
+    @include tablets {
       grid-template-columns: 1fr;
       padding: 0 8rem;
       gap: 6.4rem;
     }
 
-    @media screen and (max-width: $size-ph) {
+    @include phone {
       padding: 0 3.2rem;
     }
 
@@ -53,11 +53,11 @@
     &-img {
       width: 100%;
 
-      @media screen and (max-width: $size-t) {
+      @include tablets {
         width: 60%;
       }
 
-      @media screen and (max-width: $size-ph) {
+      @include phone {
         width: 80%;
       }
     }

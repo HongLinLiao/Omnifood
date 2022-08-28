@@ -1,47 +1,29 @@
-/*#region Margin */
+/*#region RWD */
 
-@mixin gen-mt($size) {
-  margin-top: #{$size}rem;
+@mixin sm-desktop() {
+  @media screen and (max-width: $size-sm-desktop) {
+    @content;
+  }
+}
+@mixin ls-tablets() {
+  @media screen and (max-width: $size-ls-tablets) {
+    @content;
+  }
+}
+@mixin tablets() {
+  @media screen and (max-width: $size-tablets) {
+    @content;
+  }
+}
+@mixin sm-tablets() {
+  @media screen and (max-width: $size-sm-tablets) {
+    @content;
+  }
+}
+@mixin phone() {
+  @media screen and (max-width: $size-phone) {
+    @content;
+  }
 }
 
-@mixin gen-mr($size) {
-  margin-right: #{$size}rem;
-}
-
-@mixin gen-mb($size) {
-  margin-bottom: #{$size}rem;
-}
-
-@mixin gen-ml($size) {
-  margin-left: #{$size}rem;
-}
-
-@mixin gen-m($size) {
-  margin: #{$size}rem;
-}
-
-/*#endregion Margin*/
-
-/*#region Padding */
-
-@mixin gen-pt($size) {
-  padding-top: #{$size}rem;
-}
-
-@mixin gen-pr($size) {
-  padding-right: #{$size}rem;
-}
-
-@mixin gen-pb($size) {
-  padding-bottom: #{$size}rem;
-}
-
-@mixin gen-pl($size) {
-  padding-left: #{$size}rem;
-}
-
-@mixin gen-p($size) {
-  padding: #{$size}rem;
-}
-
-/*#endregion Padding*/
+/*#endregion RWD */
